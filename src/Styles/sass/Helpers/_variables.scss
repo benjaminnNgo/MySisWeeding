@@ -1,0 +1,56 @@
+//FONT SIZE
+$fs-0: 16px;
+$fs-1: 32px;
+$fs-2: 36px;
+$fs-3: 40px;
+$fs-4: 60px;
+$fs-5: 75px;
+$fs-6: 120px;
+
+//MARGIN-PADDING
+$mp-0: 0px;
+$mp-1: 3px;
+$mp-2: 10px;
+$mp-3: 12px;
+$mp-4: 15px;
+$mp-5: 20px;
+$mp-6: 30px;
+$mp-7: 45px;
+$mp-8: 60px;
+$mp-9: 100px;
+
+//COLOR
+$color-white-0: #ffffff;
+$color-black-0: #1b1b1b;
+$color-grey-0: rgb(222, 216, 216);
+$color-grey-1: #666;
+$color-yellow-0: #b08c3e;
+
+// Font weight
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-600: 600;
+$font-weight-700: 700;
+
+//LETTER SPACING
+$letter-spacing-0: 5px;
+
+//BORDER-CONFIG
+$border-grey: 1px solid rgba(255, 255, 255, 0.03);
+
+//BREAK-POINT
+$breakpoints: (
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px,
+  "screen-0": 1290px,
+  "screen-1": 414px,
+  "screen-2": 411px,
+  "screen-3": 390px,
+);
+
+//FONT_-FAMILY;
+$font-dancing: "Dancing Script", sans-serif;
+$font-didact: "Didact Gothic", sans-serif;
+$font-brush: "Alex Brush", cursive;

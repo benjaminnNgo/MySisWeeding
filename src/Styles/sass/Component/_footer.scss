@@ -1,0 +1,46 @@
+.landing {
+  .footer {
+    margin-top: $mp-9 + 20;
+    color: $color-white-0;
+    background-color: $color-black-0;
+    .top-footer {
+      h2 {
+        font-size: $fs-4;
+        margin-bottom: $mp-2;
+        font-family: $font-brush;
+        small {
+          font-size: 80%;
+        }
+      }
+      h6 {
+        margin-bottom: $mp-0;
+        text-transform: uppercase;
+        letter-spacing: $letter-spacing-0;
+        font-size: $fs-0 - 4;
+      }
+    }
+    .sub-footer {
+      padding: $mp-6 0 $mp-2 0;
+      border-top: $border-grey;
+      p {
+        font-size: $fs-0 - 2;
+        color: $color-grey-1;
+      }
+    }
+    @include responsive("large") {
+      .top-footer {
+        h2 {
+          font-size: $fs-3;
+        }
+        h6 {
+          font-size: $fs-0 - 4;
+        }
+      }
+      .sub-footer {
+        p {
+          font-size: $fs-0 - 4;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.landing {
+  .welcome {
+    .welcome-mt {
+      position: relative;
+      margin-top: -18%;
+      z-index: 106;
+      .welcome-image-wrapper {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        .img {
+          width: 250px;
+
+          // border: 12px solid rgba(255, 255, 255, 0.2);
+          border-radius: 100%;
+          margin-bottom: 30px;
+          overflow: hidden;
+          transition: 0.5s;
+          a {
+            text-decoration: none;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+        .img:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+    .welcome-content {
+      margin: 0 16%;
+      .welcome-intro {
+        color: $color-yellow-0;
+        letter-spacing: $letter-spacing-0;
+        font-weight: $font-weight-600;
+      }
+      .welcome-announcement {
+        font-family: $font-brush;
+        font-size: $fs-4;
+        margin-bottom: $mp-5;
+      }
+      .welcome-info {
+        font-size: $fs-0 + 2;
+        line-height: 1.75em;
+        margin: 0 0 20px;
+        color: $color-grey-1;
+        font-weight: $font-weight-400;
+      }
+    }
+  }
+  @include responsive("large") {
+    .welcome {
+      .welcome-content {
+        margin: 0;
+        .welcome-announcement {
+          font-size: $fs-3;
+        }
+      }
+    }
+  }
+}

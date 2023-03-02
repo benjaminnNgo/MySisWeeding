@@ -1,0 +1,20 @@
+//HELPER
+@import "./Helpers/variables";
+@import "./Helpers/mixin";
+//VENDER
+//BASE
+@import "./Base/reset";
+@import "./Base/customize";
+//LAYOUTS
+//COMPONENTS
+@import "./Component/heading";
+@import "./Component/welcome";
+@import "./Component/couple";
+@import "./Component/banner";
+@import "./Component/footer";
+@import "./Component//when_where";
+@import "./Component//gallery";
+//PAGES
+@import "./Pages/landing";
+//THEMES
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,47 @@
+.gallery {
+  img {
+    width: 100%;
+  }
+  .section-subtitle {
+    display: block;
+    color: $color-yellow-0;
+    font-size: $fs-0 - 2;
+    font-weight: $font-weight-400;
+    margin-bottom: $mp-2;
+    letter-spacing: $letter-spacing-0;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    color: $color-black-0;
+    font-family: $font-brush;
+    font-weight: $font-weight-400;
+    font-size: $fs-4;
+    margin-bottom: $mp-5;
+  }
+  @include responsive("large") {
+    .content {
+      padding: $mp-6 0;
+      .date {
+        h3 {
+          font-size: $fs-3 + 10;
+        }
+        h6 {
+          font-size: 8px;
+        }
+      }
+      .cont {
+        h4 {
+          font-size: $fs-1;
+        }
+        p {
+          font-size: $fs-0 - 2;
+        }
+      }
+    }
+
+    .section-title {
+      font-size: $fs-3;
+    }
+  }
+}

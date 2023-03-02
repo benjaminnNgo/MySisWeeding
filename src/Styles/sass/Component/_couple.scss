@@ -1,0 +1,48 @@
+.couple {
+  background: $color-grey-0;
+  .couple-subtitle {
+    display: block;
+    color: $color-yellow-0;
+    margin-bottom: $mp-2;
+    letter-spacing: $letter-spacing-0;
+    text-transform: uppercase;
+  }
+  .couple-title {
+    color: $color-black-0;
+    font-family: $font-brush;
+    font-weight: $font-weight-400;
+    font-size: $fs-4;
+    margin-bottom: $mp-5;
+  }
+  .item {
+    .img {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto $mp-5;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h6 {
+        font-size: $fs-0 + 2;
+        font-weight: $font-weight-400;
+        margin-bottom: $mp-2;
+        text-transform: uppercase;
+        letter-spacing: $letter-spacing-0 - 2;
+      }
+      span {
+        color: #b08c3e;
+        font-size: $fs-1;
+        font-weight: $font-weight-400;
+        font-family: $font-brush;
+      }
+    }
+  }
+}

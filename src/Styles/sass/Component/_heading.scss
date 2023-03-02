@@ -1,0 +1,91 @@
+.landing {
+  .heading {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 105;
+      width: 100%;
+      background-color: transparent !important;
+      a {
+        font-size: $fs-0 + 4;
+        color: $color-white-0;
+        transition: all 0.4s;
+        cursor: pointer;
+      }
+      a:hover {
+        color: $color-yellow-0;
+      }
+
+      .navbar-brand {
+        font-family: $font-brush;
+        font-size: $fs-2;
+      }
+      .navbar-brand:hover {
+        color: $color-white-0;
+      }
+      .navbar-nav {
+        margin-right: 0 !important;
+        margin-left: auto !important;
+      }
+    }
+    .carousel-main {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      .carousel {
+        .carousel-item {
+          img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+          }
+        }
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 100;
+      }
+      .carousel-tittle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 101;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: $color-white-0;
+        h2 {
+          font-family: $font-brush;
+          font-size: $fs-6;
+        }
+        h6 {
+          font-weight: 400;
+          letter-spacing: $letter-spacing-0;
+        }
+      }
+    }
+
+    @include responsive("medium") {
+      .carousel-tittle {
+        h2 {
+          font-size: $fs-4 !important;
+        }
+        h6 {
+          font-size: $fs-0 - 4;
+        }
+      }
+    }
+  }
+}

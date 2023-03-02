@@ -1,0 +1,161 @@
+.when-where {
+  img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    width: 100%;
+    padding: $mp-6 $mp-7;
+    .date {
+      display: table-cell;
+      position: relative;
+      width: 80px;
+      z-index: 2;
+      h3 {
+        font-size: $fs-5;
+        font-weight: $font-weight-600;
+        color: $color-yellow-0;
+        margin-bottom: 0px;
+      }
+      h6 {
+        color: $color-grey-1;
+        letter-spacing: $letter-spacing-0 - 2;
+        font-size: $fs-0 - 4;
+
+        text-transform: uppercase;
+      }
+    }
+    .cont {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: $mp-6;
+      .info {
+        h6 {
+          font-size: $fs-0 - 4;
+          letter-spacing: $letter-spacing-0;
+          color: $color-yellow-0;
+
+          text-transform: uppercase;
+          margin-bottom: $mp-2;
+        }
+      }
+      h4 {
+        font-size: $fs-3;
+        margin-bottom: $mp-2;
+        font-family: $font-brush;
+      }
+      .cont-list {
+        position: relative;
+        display: block;
+        padding-left: 0;
+        list-style: none;
+        li {
+          margin-bottom: $mp-1 + 2;
+          position: relative;
+          display: flex;
+          align-items: center;
+          .icon {
+            font-size: $fs-0;
+            color: $color-yellow-0;
+          }
+          .text {
+            margin-left: $mp-5;
+            display: flex;
+            align-items: center;
+            color: $color-grey-1;
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-subtitle {
+    display: block;
+    color: $color-yellow-0;
+    font-size: $fs-0 - 2;
+    font-weight: $font-weight-400;
+    margin-bottom: $mp-2;
+    letter-spacing: $letter-spacing-0;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    color: $color-black-0;
+    font-family: $font-brush;
+    font-weight: $font-weight-400;
+    font-size: $fs-4;
+    margin-bottom: $mp-5;
+  }
+  @include responsive("large") {
+    .content {
+      padding: $mp-6 0;
+      .date {
+        h3 {
+          font-size: $fs-3 + 10;
+        }
+        h6 {
+          font-size: 8px;
+        }
+      }
+      .cont {
+        h4 {
+          font-size: $fs-1;
+        }
+        p {
+          font-size: $fs-0 - 2;
+        }
+      }
+    }
+
+    .section-title {
+      font-size: $fs-3;
+    }
+  }
+
+  @include responsive("medium") {
+    .content {
+      padding: $mp-6 0;
+      .date {
+        h3 {
+          font-size: $fs-5;
+        }
+        h6 {
+          font-size: $fs-0 - 4;
+        }
+      }
+      .cont {
+        h4 {
+          font-size: $fs-3;
+        }
+        p {
+          font-size: $fs-0;
+        }
+      }
+    }
+  }
+  @include responsive("screen-1") {
+    .content {
+      padding: $mp-6 0;
+      .date {
+        h3 {
+          font-size: $fs-3 + 10;
+        }
+        h6 {
+          font-size: $fs-0 - 8;
+        }
+      }
+      .cont {
+        h4 {
+          font-size: $fs-1;
+        }
+        p {
+          font-size: $fs-0;
+        }
+      }
+    }
+  }
+}
